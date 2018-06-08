@@ -1,0 +1,4 @@
+baseURL = "https://paveltumilovich.ru/"
+languageCode = "en-us"
+title = "Pavel Tumilovich's Blog"
+theme = "hyde-hyde"

@@ -1,4 +1,114 @@
 baseURL = "https://paveltumilovich.ru/"
 languageCode = "en-us"
 title = "Pavel Tumilovich's Blog"
-theme = "hyde-hyde"
+theme = "bilberry-hugo-theme"
+
+enableRobotsTXT = true
+
+# Change to your content language. Supported values: en, de, es, fr, ru
+DefaultContentLanguage = "en"
+
+# Enable / Disable Google Analytics statistics for your site
+googleAnalytics = "UA-120603751-1"
+
+# Enable / Disable comments on the articles via Disqus.
+#disqusShortname = "bilberry-hugo-theme"
+
+[params]
+  # Favicon for the browser's favorites and tabs
+  favicon = "" # set a favicon icon
+
+  # Custom CSS / JS modules that will be imported by the template.
+  # Files are relative to the static/ directory or a URL.
+  # Files are imported in the order they appear here, after
+  # theme.css and theme.js, respectively.
+  css_modules = []
+  js_modules = []
+
+  # Description and meta data for the search engines
+  author = "Pavel Tumilovich"
+  description = "Pavel Tumilovich personal blog"
+  keywords = "tumilovich,blog,java,programming,books,rust,microcontrollers"
+
+  # How many articles should be displayed at once?
+  paginate = 10
+
+  # Enable / Disable MathJax
+  enable_mathjax    = true
+
+  # Enable / Disable algolia search
+  algolia_search    = true
+  algolia_appId     = "379X5DSDDX"
+  algolia_apiKey    = "0ee9ff7cc19e760d45a9389ee89c9d06"
+  algolia_indexName = "paveltumilovich.ru"
+
+  # Header configuration
+    # your subtitle if you want to use any
+    subtitle = "Yet another programmer's blog..."
+
+    # if you want to use gravatar for the header image
+    gravatarEMail = "paveltumilovich@gmail.com"
+
+    # set an path to the image file you want to use | overwrites gravatar
+    customImage = ""
+
+    # always display the top navigation (with pages and search) on non-mobile screens
+    permanentTopNav = false
+
+  # social media profile urls for the footer links
+  facebook   = "https://www.facebook.com/paveltumilovich"
+  twitter    = ""
+  googleplus = ""
+  pinterest  = ""
+  instagram  = ""
+  tumblr     = ""
+  youtube    = ""
+  vimeo      = ""
+  github     = "https://github.com/johngray"
+  xing       = ""
+  linkedin   = "https://www.linkedin.com/in/pavel-tumilovich-74381052/"
+
+# don't change anything here
+[taxonomies]
+  author   = "author"
+  tag      = "tags"
+  category = "categories"
+
+[outputs]
+  home = [ "HTML", "JSON" ]
+  page = [ "HTML" ]
+
+#theme = "hyde-hyde"
+
+#[params]
+#    author = "Pavel Tumilovich"
+#    description = "Yet another programming blog."
+#    authorimage = "/img/hugo.png"
+#    dateformat = "Jan 2, 2006"
+#    highlightjs = true
+#    highlightjsstyle = "github"
+    # please choose either GraphComment or Disqus
+    # GraphCommentId = "your-graph-comment-id"
+    # layoutReverse = true
+    # sidebarSticky = true
+
+## Social Accounts
+#[params.social]
+#    github = "johngray"
+#    linkedin = "pavel-tumilovich-74381052"
+#    facebook = "paveltumilovich"
+#    stackoverflow = "527590/johngray"
+#    email = "paveltumilovich@gmail.com"
+
+## Main Menu
+#[[menu.main]]
+#    name = "Posts"
+#    weight = 100
+#    identifier = "posts"
+#    url = "/posts/"
+#[[menu.main]]
+#    name = "About"
+#    identifier = "about"
+#    weight = 200
+#    url = "/about/"
+

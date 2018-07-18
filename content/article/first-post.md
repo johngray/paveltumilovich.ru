@@ -11,7 +11,7 @@ tags:
 
 So, it took me a long time to figure out what to write in my first post.
 
-Not very long time ago I was (and still is) excited about the **Rust** language. Back in my university days, I used to write a lot of lines of code in C++. Today I write mostly Java and Kotlin but I still like C++, especially after **C++11 **standard was introduced.
+Not very long time ago I was (and still is) excited about the **Rust** language. Back in my university days, I used to write a lot of lines of code in C++. Today I write mostly Java and Kotlin but I still like C++, especially after **C++11** standard was introduced.
 But it was always way too easy to shoot yourself in a leg using C++. And because of this you always have to use a lot of tooling: static code analysis, Valgrind, a large group to test and many other things just to make sure that everything is going to be fine with your code.
 Also, a lack of adequate package management solution was frustrating.
 

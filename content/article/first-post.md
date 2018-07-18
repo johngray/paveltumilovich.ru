@@ -280,9 +280,9 @@ $ cargo run
 
 ```
 
-Just as expected :) And if you make v1 greater that v2 it will output just empty vector.
+Just as expected :) And if you make `v1` greater that `v2` it will output just empty vector.
 
-#Final thoughts
+# Final thoughts
 
 Let's sum it up. What we have learned from this simple program:
 

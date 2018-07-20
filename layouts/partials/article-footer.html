@@ -1,0 +1,35 @@
+{{ with .Params.tags }}
+<div class="footer">
+{{ else }}
+<div class="footer no-tags">
+{{ end }}
+
+    {{ with .Params.tags }}
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                {{ range . }}
+                    <a href="{{ (print "/tags/" (. | urlize)) | relLangURL }}">{{ . }}</a>
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
+
+    {{ if .IsTranslated }}
+    <div class="languages">
+        <i class="fa fa-language"></i>
+        <div class="links">
+            {{ range .Translations }}
+                <a href="{{ .Permalink }}">{{ .Lang }}</a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    <div class="social-likes" style="margin: 1em 2em;">
+	<div style="color: black;" data-service="facebook" title="Share link on Facebook"></div>
+	<div style="color: black;" data-service="twitter" title="Share link on Twitter"></div>
+	<div style="color: black;" data-service="plusone" title="Share link on Google+"></div>
+	<div style="color: black;" data-service="vkontakte" title="Share link on Vkontakte"></div>
+    </div>
+</div>

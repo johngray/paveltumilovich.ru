@@ -1,0 +1,16 @@
+<a class="bubble" href="{{ .URL }}">
+    <i class="fa fa-fw fa-pencil"></i>
+</a>
+
+<div class="social-likes social-likes_vertical" style="position: absolute; left: 43px; top: 160px;">
+	<div style="color: black;" data-service="facebook" title="Share link on Facebook"></div>
+	<div style="color: black;" data-service="twitter" title="Share link on Twitter"></div>
+	<div style="color: black;" data-service="plusone" title="Share link on Google+"></div>
+	<div style="color: black;" data-service="vkontakte" title="Share link on Vkontakte"></div>
+</div>
+
+<article class="default article">
+    {{ partial "featured-image" . }}
+    {{ partial "default-content" . }}
+    {{ partial "article-footer" . }}
+</article>
